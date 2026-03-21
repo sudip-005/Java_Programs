@@ -1,13 +1,10 @@
-class StaticDemo {
-    static int count = 0;
+class StaticMethodDemo {
 
-    StaticDemo() {
-        count++;
+    static void display() {
+        System.out.println("Static Method Called");
     }
 
     public static void main(String[] args) {
-        new StaticDemo();
-        new StaticDemo();
-        System.out.println("Count = " + count);
+        display();
     }
 }
